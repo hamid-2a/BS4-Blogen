@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Blogen</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <!-- Brand -->
+            <a href="#" class="navbar-brand">Blogen</a>
+
+            <!-- collapse button -->
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links and collapse -->
+            <div class="collapse navbar-collapse" id="collapseItem" aria-expanded="false">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="posts.html" class="nav-link">Post</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Categories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Users</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>
+                            Welcome Brad
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-user-times"></i>
+                            Log out
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary p-2">
+        <div class="container">
+            <h1><i class="fa fa-cog"></i>Dashboard</h1>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <button class="btn btn-primary col-xl-2 col-md-12 col-sm-12 mr-2"><i class="fa fa-plus"></i> Add Post</button>
+        <button class="btn btn-success col-xl-2 col-md-12 col-sm-12 mr-2"><i class="fa fa-plus"></i> Add Category</button>
+        <button class="btn btn-warning col-xl-2 col-md-12 col-sm-12 mr-2"><i class="fa fa-plus"></i> Add User</button>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card bg-light">
+                    <h4 class="p-3">Latest Posts</h4>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Post One</td>
+                                <td>Web Developement</td>
+                                <td>May 10 2018</td>
+                                <td><a href="#" class="btn btn-secondary">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Details
+                                </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Post Two</td>
+                                <td>Tech Gadgets</td>
+                                <td>May 11 2018</td>
+                                <td><a href="#" class="btn btn-secondary">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Details
+                                </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Post Three</td>
+                                <td>Web Developement</td>
+                                <td>May 13 2018</td>
+                                <td><a href="#" class="btn btn-secondary">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Details
+                                </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Post Four</td>
+                                <td>Business</td>
+                                <td>May 15 2018</td>
+                                <td><a href="#" class="btn btn-secondary">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Details
+                                </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Post Five</td>
+                                <td>Web Developement</td>
+                                <td>May 17 2018</td>
+                                <td><a href="#" class="btn btn-secondary">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Details
+                                </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>Post Six</td>
+                                <td>Health & Wellness</td>
+                                <td>May 20 2018</td>
+                                <td><a href="#" class="btn btn-secondary">
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Details
+                                </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card bg-primary text-center text-white mb-3">
+                    <div class="card-body display-4">
+                        <h3>Posts</h3>
+                        <i class="fa fa-pencil-alt"></i>
+                         6
+                        </div>
+                        <div>
+                            <a href="posts.html" class="btn btn-outline-light btn-sm mb-3">View</a>
+                        </div>
+                </div>
+
+                <div class="card bg-success text-center text-white mb-3">
+                    <div class="card-body display-4">
+                        <h3>Categories</h3>
+                        <i class="fa fa-folder"></i>
+                         6
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-outline-light btn-sm mb-3">View</a>
+                        </div>
+                </div>
+
+                <div class="card bg-warning text-center text-white mb-3">
+                    <div class="card-body display-4">
+                        <h3>Users</h3>
+                        <i class="fa fa-users"></i>
+                         6
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-outline-light btn-sm mb-3">View</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center text-white p-5">
+        <p class="lead">Copyright © Jason</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
